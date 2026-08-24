@@ -12,7 +12,6 @@ import javax.swing.JPanel;
 public class GamePanel extends JPanel implements Runnable{
     private final KeyHandler keyH = new KeyHandler();
     private Thread gameThread;
-    private boolean isAllTilesPaint = false;
     
     // Screen settings
     private final int originalTileSize = 16;

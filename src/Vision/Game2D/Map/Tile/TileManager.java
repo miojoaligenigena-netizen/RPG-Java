@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class TileManager implements Model{
     private enum tileType { 
-        ERROR(0), GRASS(1), BRICK(2), WATER(3);
+        ERROR(0), GRASS(1), BRICK(4), WATER(5);
 
         private final int id;
         tileType(int id) { this.id = id; }
@@ -33,7 +33,7 @@ public class TileManager implements Model{
         this.gp = gp;
         mapTileNum = new int[gp.getMaxScreenCol()][gp.getMaxScreenRow()];
         getTileImage();
-        mapReader("/Model/Maps/map1.txt");
+        mapReader("/Model/Maps/map.txt");
     }
 
     public void getTileImage() {
