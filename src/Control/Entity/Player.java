@@ -12,6 +12,7 @@ import java.io.IOException;
 public final class Player extends Entity {
     private final GamePanel gp;
     private final KeyHandler keyH;
+    private Stats = new Stats(this);
 
     private final String spritePath = "src/Model/Player_Sprites/";
 
